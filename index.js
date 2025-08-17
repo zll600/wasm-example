@@ -7,9 +7,10 @@ const runWasm = async () => {
   const helloWorld = await init("./pkg/wasm_example_bg.wasm");
 
   // Call the Add function export from wasm, save the result
-  const addResult = helloWorld.add(24, 24);
+  const result = helloWorld.call_me_from_javascript(24, 24);
 
-  // Set the result onto the body
-  document.body.textContent = `Hello World! addResult: ${addResult}`;
+  console.log(result); // Should output '72'
+  console.log(helloWorld.ADD_CONSTANT); // Should output 'undefined'
+  console.log(helloWorld.add_integer_with_constant); // Should output 'undefined'
 };
 runWasm();
