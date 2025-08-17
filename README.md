@@ -11,3 +11,4 @@ wasm-pack build --target web
 - https://wasmbyexample.dev/examples/hello-world/hello-world.rust.en-us.html
 - https://wasmbyexample.dev/examples/exports/exports.rust.en-us.html
 - https://wasmbyexample.dev/examples/webassembly-linear-memory/webassembly-linear-memory.rust.en-us.html
+- https://wasmbyexample.dev/examples/importing-javascript-functions-into-webassembly/importing-javascript-functions-into-webassembly.rust.en-us.html
